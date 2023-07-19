@@ -1,0 +1,20 @@
+// or browse Examples
+module full_adder;
+  bit [1:0]a,b,cin;
+  bit [1:0]sum;
+  bit carry;
+
+  initial
+    begin
+      a=2'b00;
+      b=2'b01;
+      cin=2'b10;
+      begin
+      label: assert(a^b^cin)
+        $display("sum value", sum);
+        label: assert(a*b*cin)
+          $display("cout value", cout);
+    end
+    end
+endmodule
+//there are 2 error here.
